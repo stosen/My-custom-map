@@ -87,6 +87,64 @@ const initMap = () => {
     scale: 2,
     anchor: new google.maps.Point(15, 30)
   }
+
+  // The marker, positioned on Big Island
+  const marker = new google.maps.Marker({
+    position: bigIsland,
+    map: map,
+    icon: svgMarker
+  })
+
+  marker.addListener('click', () => {
+    infowindowBI.open({
+      anchor: marker,
+      map,
+      shouldFocus: true
+    })
+  })
+  // The marker, positioned on Maui
+  const marker2 = new google.maps.Marker({
+    position: maui,
+    map: map,
+    icon: svgMarker
+  })
+
+  marker2.addListener('click', () => {
+    infowindowMaui.open({
+      anchor: marker2,
+      map,
+      shouldFocus: true
+    })
+  })
+  // The marker, positioned on Kauai
+  const marker3 = new google.maps.Marker({
+    position: kauai,
+    map: map,
+    icon: svgMarker
+  })
+
+  marker3.addListener('click', () => {
+    infowindowKauai.open({
+      anchor: marker3,
+      map,
+      shouldFocus: true
+    })
+  })
+
+  // The marker, positioned on Oahu
+  const marker4 = new google.maps.Marker({
+    position: oahu,
+    map: map,
+    icon: svgMarker
+  })
+
+  marker4.addListener('click', () => {
+    infowindowOahu.open({
+      anchor: marker4,
+      map,
+      shouldFocus: true
+    })
+  })
 }
 
 window.initMap = initMap
