@@ -8,6 +8,13 @@ const initMap = () => {
   const kauai = { lat: 22.107831454996642, lng: -159.52709513605495 }
   // The location of Oahu
   const oahu = { lat: 21.454301796912564, lng: -157.99957028630436 }
+
+  // The map, centered in Maui, HI
+  const map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 7.5,
+    center: maui,
+    mapId: '38a03f24376fff1d'
+  })
 }
 
 window.initMap = initMap
