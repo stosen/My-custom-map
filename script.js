@@ -95,6 +95,7 @@ const initMap = () => {
     icon: svgMarker
   })
 
+  // listener for the ping on Big Island
   marker.addListener('click', () => {
     infowindowBI.open({
       anchor: marker,
@@ -108,7 +109,7 @@ const initMap = () => {
     map: map,
     icon: svgMarker
   })
-
+  // listener for the ping on Maui
   marker2.addListener('click', () => {
     infowindowMaui.open({
       anchor: marker2,
@@ -123,6 +124,7 @@ const initMap = () => {
     icon: svgMarker
   })
 
+  // listener for the ping on Kauai
   marker3.addListener('click', () => {
     infowindowKauai.open({
       anchor: marker3,
@@ -138,6 +140,7 @@ const initMap = () => {
     icon: svgMarker
   })
 
+  // listener for the ping on Oahu
   marker4.addListener('click', () => {
     infowindowOahu.open({
       anchor: marker4,
